@@ -1,0 +1,12 @@
+<div class="row mt-5">
+  <p>{{ sampleVariable }}</p>
+
+  <button class="btn btn-info" [routerLink]="['/sample2']" [queryParams]="{name: 'Mounish'}">Sample Page 2</button>
+  <button class="btn btn-info" (click)="sendSampleRequest()">Send Request</button>
+</div>
+
+<div class="row mt-5">
+  <div *ngIf="messageResponse">
+    <p>{{ messageResponse }}</p>
+  </div>
+</div>
